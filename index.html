@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio de Futebol</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,7 +23,7 @@
     </header>
     <section id="sobre">
         <h2>Sobre</h2>
-        <p>Paixão pelo futebol desde 2000...</p>
+        <p>Paixão pelo futebol desde 2000. Este portfólio é dedicado a compartilhar informações sobre equipes, jogadores, e tudo mais relacionado ao mundo do futebol.</p>
     </section>
     <section id="equipes">
         <h2>Equipes</h2>
@@ -70,7 +71,15 @@
     </section>
     <section id="contato">
         <h2>Contato</h2>
-        <p>Email: <a href="mailto:contato@futebol.com">contato@futebol.com</a></p>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
     </section>
     <footer>
         <p>&copy; 2024 Portfólio de Futebol</p>
